@@ -101,3 +101,24 @@ h1, h2, h3, h4{
 .deck-container ol, .deck-container ul{
 	font-size: 1.2em;
 }
+.deck-container p.inline img{
+	float: left;
+}
+.deck-container .done *{
+	text-decoration: line-through;
+	color: #ccc;
+}
+.deck-container .here{
+	position: relative;
+}
+.deck-container .here:after{
+	content: "YOU ARE HERE";
+	position: absolute;
+	color: red;
+	top: 0px;
+	left: -70px;
+	font-weight: 700;
+	text-shadow: 2px 2px 2px white;
+	-webkit-transform: rotate(-10deg); 
+	-moz-transform: rotate(-10deg);	
+}
