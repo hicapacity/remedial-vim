@@ -18,18 +18,6 @@
 </head>
 
 <body class="home">
-	<header>
-		<nav>
-			<h1><a>Blah</a></h1>
-			<ul>
-				<li>Blah</li>
-				<li>Blah</li>
-				<li>Blah</li>
-				<li>Blah</li>
-			</ul>
-		</nav>
-	</header>
-
 <article class="deck-container">
 	<section class="slide" id="slide_intro">
 		<div>
@@ -521,7 +509,7 @@
 				<li>
 					<h3>Sex and stuff</h3>
 					<p>Yes, you can Sex in vim</p>
-					<p>(Actually, built-in file explorer and splits)</p>
+					<p>(Actually, built-in file explorer, splits, other stuff)</p>
 				</li>
 				<li>
 					<h3>MACROSS, I MEAN MACROS</h3>
@@ -545,7 +533,7 @@
 					<p>Forget them, Vim is about keeping your fingers where they need to be</p>
 					<pre style="font-size:2em;">,---,---,---,---,
 |&larr;  |   |&uarr;&uarr;&uarr;|  &rarr;|
-|&larr;H | J | K | L&rarr;|
+|&larr;h | j | k | l&rarr;|
 |&larr;  |&darr;&darr;&darr;|   |  &rarr;|
 `---`---`---`---`</pre>
 				</li>
@@ -582,7 +570,214 @@
 					<p> gg (go to beginning of file)</p>
 					<p> G (go to end of file)</p>
 				</li>
+				<li>And many many more (jump forward a word, go to the next __ character, go to top of screen, parenthesis matching, etc.)</li>
 			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Now try it</h2>
+			<h3>Vim text1.txt, move your cursor around (don't quit!)</h3>
+			<ol>
+				<li>
+					<blockquote>
+						<p>
+						$vim text1.txt
+						</p>
+					</blockquote>
+				</li>
+				<li>
+					<h3>Notes:</h3>
+					<ul>
+						<li>h, j, k, l for navigation</li>
+						<li>0, ^, $ to jump around a line</li>
+						<li>try multipliers</li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Semi-Advanced Editing</h2>
+			<ul>
+				<li>
+					<h3>Alternatives for i</h3>
+					<p>A -> input mode (at end of line)</p>
+					<p>o -> (lower O) inserts new line (below cursor row)</p>
+				</li>
+				<li>
+					<h3>Other fancy things</h3>
+					<p>R -> start REPLACE mode</p>
+					<p>x -> delete character under cursor</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Remember when things were case sensitive?</h2>
+			<ul>
+				<li>
+					<h3>Most things have a similar function on same key</h3>
+					<p>a -> input mode (one space after cursor)</p>
+					<p>O -> (upper O) inserts new line (at cursor row)</p>
+					<p>r -> replace one character under cursor</p>
+					<p>X -> delete character before cursor</p>
+				</li>
+				<li>
+					<h3>This applies to other things too!</h3>
+					<p>(Like, maybe the navigation buttons)</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Now try it</h2>
+			<h3>Still in Vim text1.txt right?</h3>
+			<p>Don't quit out of here either</p>
+			<ol>
+				<li>
+					<h3>Notes:</h3>
+					<ul>
+						<li>A -> insert at end</li>
+						<li>o -> new line</li>
+						<li>R -> REPLACE mode</li>
+						<li>x -> delete character</li>
+						<li>those alt-case alternatives</li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h1>Stop the presses!</h1>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Remember "escape is your buddy"?</h2>
+			<h3>ctrl +c</h3>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>undo/redo</h2>
+			<ul>
+				<li>
+					<h3>u - undo</h3>
+				</li>
+				<li>
+					<h3>ctrl+r - redo</h3>
+				</li>
+				<p>note: you need to be in normal mode for these</p>
+			</ul>
+			<h2>yeah, just try it now</h2>
+			<p>you were paying attention and made edits just before right?</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Cut/Paste</h2>
+			<ul>
+				<li>
+					<h3>Need to learn to mark first</h3>
+					<p>v -> select mode</p>
+					<p>V -> line select mode</p>
+				</li>
+				<li>
+					<h3>Cut/Copy</h3>
+					<p>d -> delete</p>
+					<p>y -> yank</p>
+				</li>
+				<li>
+					<h3>Paste</h3>
+					<p>p -> pastes after current line</p>
+				</li>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Now try it</h2>
+			<h3>Still in Vim text1.txt right?</h3>
+			<ol>
+				<li>
+					<h3>Notes:</h3>
+					<ul>
+						<li>v, V -> mark text</li>
+						<li>d, y -> copy text</li>
+						<li>p (or P) -> paste</li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Sign-posting</h2>
+			<ol>
+				<li class="done">
+					<h3>Navigation</h3>
+				</li>
+				<li class="done">
+					<h3>Semi-advanced editing</h3>
+				</li>
+				<li class="done">
+					<h3>Undo/Redo</h3>
+				</li>
+				<li class="done">
+					<h3>Cut/Paste</h3>
+				</li>
+			</ol>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>You're so cool</h2>
+			<ol>
+				<li value=4 class="here">
+					<h3>Search/Replace</h3>
+				</li>
+				<li>
+					<h3>Sex and stuff</h3>
+				</li>
+				<li>
+					<h3>MACROSS, I MEAN MACROS</h3>
+				</li>
+			</ol>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Search/Replace</h2>
+			<ul>
+				<li>
+					<h3>Your first foray into Command-line mode</h3>
+					<p>this isn't all you can do in command-line mode</p>
+					<p>you will learn about those later</p>
+				</li>
+				<li>
+					<h3>/ -> then type what you want</h3>
+					<p>/fish -> search for "fish"</p>
+					<p>use a regex: /^fish -> search for "fish" at beginning of line</p>
+				</li>
+				<li>
+					<h3>n or N to iterate through results</h3>
+				</li>
 		</div>
 	</section>
 
