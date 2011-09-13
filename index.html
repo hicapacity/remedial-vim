@@ -763,7 +763,7 @@
 
 	<section class="slide">
 		<div>
-			<h2>Search/Replace</h2>
+			<h2>Search</h2>
 			<ul>
 				<li>
 					<h3>Your first foray into Command-line mode</h3>
@@ -780,6 +780,61 @@
 				</li>
 		</div>
 	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Replace <span>pay attention!</span></h2>
+			<ul>
+				<li>
+					<h3>:%s/needle/replacement/</h3>
+				</li>
+				<li>
+					<h3>:%s/needle/replacement/g</h3>
+				</li>
+			</ul>
+			<h2>Looks like sed?</h2>
+			<ul>
+				<li>
+					<p>:s/needle/replacement/ (is for current line)</p>
+					<p>:5,12s/needle/replacement/ (from line 5 to 12)</p>
+					<p>:.,$/needle/replacement/ (current line to end of file)</p>
+					<p>:.,+2/needle/replacement/ (current line and next 2)</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Replace <span>your visually marked stuff!</span></h2>
+			<ul>
+				<li>
+					<h3>:'&lt;,'&gt;s/needle/replacement/</h3>
+					<p>You don't even need to type in the '&lt;,'&gt; part</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div>
+			<h2>Now try it on text2.txt</h2>
+			<h3>Notes:</h3>
+			<ul>
+				<li>/search</li>
+				<li>:%s/needle/replacement/ (or add g)</li>
+				<li>:'&lt;,'&gt;s/needle/replacement/ (for visually blocked code)</li>
+			</ul>
+			<h3>Tasks:</h3>
+			<ol>
+				<li>Search for occurances of happy_lock</li>
+				<li>Change all references of linux to windows8</li>
+				<li>Have other general fun</li>
+			</ol>
+		</div>
+	</section>
+
+
 
 </article>
 
