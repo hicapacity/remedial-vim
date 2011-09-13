@@ -185,8 +185,6 @@ body > footer {
   z-index: 4;
 }
 body > footer > p {
-  float: right;
-  margin-right: 10px;
   padding: 0 4px;
   background: #fff;
 }
